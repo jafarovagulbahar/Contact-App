@@ -1,0 +1,18 @@
+.navbar {
+  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+}
+
+.navbar a {
+  color: #ffffff;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.navbar .btn {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #9a02ac;
+  -webkit-transition: background-color 3s ease;
+  transition: background-color 3s ease;
+}
+/*# sourceMappingURL=module.css.map */

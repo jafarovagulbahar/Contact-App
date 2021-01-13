@@ -1,0 +1,25 @@
+// Normalise
+
+*, body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+// General 
+body{
+    background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+}
+.content{
+    max-width: 50em;
+    margin: 4em auto;
+    padding: 40px;
+    padding-top: 40px;
+    box-shadow: 0 0 40px #000;
+    background-color: #ffffff;
+}
+.ant-list-item-meta-title{
+    word-break: break-all;
+}

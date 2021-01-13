@@ -1,0 +1,77 @@
+.addUserForm{
+    padding: 70px;
+    padding-top: 0px;
+    .ant-form-item{
+        display: block;
+        margin-bottom: 0px;
+        input{
+            box-shadow: 0px 2px 9px -4px #444;
+            border: none;
+            border-radius: 20px;
+        }
+       .selctBox{
+            box-shadow: 0px 2px 9px -4px #444;
+            border: none;
+            border-radius: 20px;
+           #basic_job{
+                box-shadow: none;
+                border-radius: none;
+        }
+       }
+    }
+    button{
+       margin-left: 3px;
+    }
+    .AddCancelBtns{
+        margin-top: 20px;
+        .checkbox{
+            padding-left: 0px;
+        }
+    }
+    .addBtn{
+        background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+        border-radius: 10px;
+        color: #ffff;
+        font-weight: 600;
+        span{
+            margin-bottom: 1px;
+        }&:hover{
+            background: -webkit-linear-gradient(left, #b224ef, #7579ff);
+        }
+    }
+    .ant-form-item-control-input-content{
+        display:flex
+    }
+    .cancelBtn{
+       box-shadow: 0px 1px 14px -8px #444;
+        border-radius: 10px;
+        padding: 0px 35px;
+        a{
+            color: #b224ef;
+            font-weight: 600;
+            text-decoration: none;
+        }&:hover{
+            color:#7579ff;
+        }
+    }
+    .ant-form-item-control{
+        .ant-form-item-explain{
+            font-size: 12px;
+        }
+    }
+    .ant-radio-group,
+    .checkbox{
+        span{
+            font-weight: 600;
+            font-family: inherit;
+            font-size: 14px;
+        }
+    }
+   
+}
+.ant-form-item-label > label{
+    height: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: inherit;
+}

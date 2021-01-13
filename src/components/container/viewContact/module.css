@@ -1,0 +1,20 @@
+.viewContactUser .ant-modal-body {
+  padding: 15px;
+}
+
+.viewContactUser div {
+  border-bottom: 1px solid #d3d3dd;
+  padding: 5px 10px 5px 10px;
+}
+
+.viewContactUser div span {
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.viewContactUser div h6 {
+  font-weight: 400;
+  padding: 2px 10px;
+}
+/*# sourceMappingURL=module.css.map */
