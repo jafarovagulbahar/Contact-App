@@ -13,8 +13,7 @@ export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState )
     
-  const LocalData=()=>{
-    
+  const LocalData=()=>{  
     const localData = localStorage.getItem('state')
     return localData ? JSON.parse(localData) : []
   }
