@@ -11,13 +11,19 @@ export const GlobalContext = createContext(initialState);
 
 // Provider Component
 export const GlobalProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AppReducer, initialState , ()=>{
-    const localData = localStorage.getItem('state')
-    return localData ? JSON.parse(localData) : []})
+  const [state, dispatch] = useReducer(AppReducer, initialState )
     
+  const LocalData=()=>{
+    
+    const localData = localStorage.getItem('state')
+    return localData ? JSON.parse(localData) : []
+  }
   useEffect(() => {
+    LocalData()
     localStorage.setItem('state', JSON.stringify(state))
  }, [state])
+
+ 
   // Actions
   const removeUser = (id) => {
     dispatch({
