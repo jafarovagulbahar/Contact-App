@@ -9,13 +9,12 @@ import {
        } from '@ant-design/icons'
 
 import { Popconfirm, message } from 'antd';
-
-import './module.css';
-import { ViewUser } from '../viewContact/ViewUser';
-
-export const UserList = () => {
+import { ViewContact } from '../../components/viewContact/ViewContact';
+import style from './contactList.module.css'
 
 
+
+export const ContactList = () => {
   const { users, removeUser } = useContext(GlobalContext);
 
   const [userID,setUserID] = useState('')
@@ -33,7 +32,7 @@ export const UserList = () => {
   return (
   
   
-    <List className="mt-4 userList">
+    <List className={style.contactList} >
       {users.length > 0 ? (
        <>
           {users.map(user => (
@@ -41,27 +40,33 @@ export const UserList = () => {
             <List.Item  key={user.id}>
 
               <Avatar src="assets/icons/user.png" />
-             
+               
               <List.Item.Meta
+                className={style.banner}
                 title={user.name}
               />
-                <List.Item.Meta
+              <List.Item.Meta
+                className={style.banner}
                 title={user.surname}
               />
               <List.Item.Meta
+                className={style.banner}
                 title={user.fathername}
               />
                <List.Item.Meta
                 title={user.valueJob}
               />
               
-            <div className="ml-auto">
+            <div >
 
-              <Button  onClick={()=>setUserID(user.id)} >
+              <Button  
+                 className={style.btnAction}
+                 onClick={()=>setUserID(user.id)} 
+              >
                 <InfoCircleTwoTone />     
               </Button> 
 
-              <Button >
+              <Button className={style.btnAction}>
                 <Link to={`/edit/${user.id}`} >
                   <EditTwoTone twoToneColor="#52c41a" />
                 </Link>
@@ -75,14 +80,14 @@ export const UserList = () => {
                 okText="Yes"
                 cancelText="No"   
               >                
-                <Button>
+                <Button  className={style.btnAction}>
                    <DeleteTwoTone twoToneColor="#eb2f96"/> 
                 </Button>               
               </Popconfirm>
     
               </div>
 
-              { userID === user.id? <ViewUser id={user.id} setUserID={setUserID} />: null }
+              { userID === user.id? <ViewContact id={user.id} setUserID={setUserID} />: null }
          
             </List.Item>
           ))}

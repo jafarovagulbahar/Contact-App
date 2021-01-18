@@ -1,0 +1,30 @@
+// Normalise
+$bacground-color-gradient-1:-webkit-linear-gradient(left, #7579ff, #b224ef);
+$bacground-color-gradient-2:-webkit-linear-gradient(left, #b224ef, #7579ff);
+$box-shadow: 0px 2px 9px -4px #444;
+$color-white:white;
+
+*, body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+// General 
+body{
+    background:$bacground-color-gradient-1;
+    .content{
+        max-width: 50em;
+        margin: 4em auto;
+        padding: 40px;
+        padding-top: 40px;
+        box-shadow: 0 0 40px #000;
+        background-color:$color-white;
+    }
+    .ant-list-item-meta-title{
+        word-break: break-all;
+    }
+    
+}

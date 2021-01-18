@@ -1,0 +1,13 @@
+
+$box-shadow-grey:0px 1px 14px -8px #444;
+
+.inputContent{
+    display: block !important;
+    margin-bottom: 0 !important;
+    .input{
+        box-shadow:$box-shadow-grey;
+        border: none;
+        border-radius: 20px;
+    }
+}
+

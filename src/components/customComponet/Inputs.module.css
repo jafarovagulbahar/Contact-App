@@ -1,0 +1,12 @@
+.inputContent {
+  display: block !important;
+  margin-bottom: 0 !important;
+}
+
+.inputContent .input {
+  -webkit-box-shadow: 0px 1px 14px -8px #444;
+          box-shadow: 0px 1px 14px -8px #444;
+  border: none;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=Inputs.module.css.map */

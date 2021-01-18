@@ -1,0 +1,71 @@
+.addUserForm {
+  padding: 70px;
+  padding-top: 0px;
+}
+
+.addUserForm .inputContent {
+  display: block;
+  margin-bottom: 0;
+}
+
+.addUserForm .selctBox {
+  -webkit-box-shadow: 0px 1px 14px -8px #444;
+          box-shadow: 0px 1px 14px -8px #444;
+  border: none;
+  border-radius: 20px;
+}
+
+.addUserForm button {
+  margin-left: 3px;
+}
+
+.addUserForm .AddCancelBtns, .addUserForm .UpdateButtons {
+  margin-top: 20px;
+}
+
+.addUserForm .AddCancelBtns .notify, .addUserForm .UpdateButtons .notify {
+  width: 50%;
+}
+
+.addUserForm .AddCancelBtns .addBtn, .addUserForm .UpdateButtons .addBtn {
+  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  border-radius: 10px;
+  color: #ffff;
+  font-weight: 600;
+}
+
+.addUserForm .AddCancelBtns .addBtn span, .addUserForm .UpdateButtons .addBtn span {
+  margin-bottom: 1px;
+}
+
+.addUserForm .AddCancelBtns .addBtn:hover, .addUserForm .UpdateButtons .addBtn:hover {
+  background: -webkit-linear-gradient(left, #b224ef, #7579ff);
+  color: #ffff;
+}
+
+.addUserForm .AddCancelBtns .cancelBtn, .addUserForm .UpdateButtons .cancelBtn {
+  -webkit-box-shadow: 0px 1px 14px -8px #444;
+          box-shadow: 0px 1px 14px -8px #444;
+  border-radius: 10px;
+  padding: 0px 35px;
+}
+
+.addUserForm .AddCancelBtns .cancelBtn a, .addUserForm .UpdateButtons .cancelBtn a {
+  color: #b224ef !important;
+}
+
+.addUserForm .AddCancelBtns .cancelBtn:hover, .addUserForm .UpdateButtons .cancelBtn:hover {
+  color: #7579ff;
+}
+
+.addUserForm .UpdateButtons {
+  float: right;
+}
+
+.addUserForm label, .addUserForm .AddCancelBtns .cancelBtn a, .addUserForm .UpdateButtons .cancelBtn a {
+  height: 10px !important;
+  margin-top: 15px;
+  font-weight: 600;
+  font-family: inherit;
+}
+/*# sourceMappingURL=addContact.module.css.map */

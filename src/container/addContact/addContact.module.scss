@@ -1,0 +1,64 @@
+$bg-1: -webkit-linear-gradient(left, #7579ff, #b224ef);
+$bg-2:-webkit-linear-gradient(left, #b224ef, #7579ff);
+$box-shadow-grey:0px 1px 14px -8px #444;
+$color-white:#ffff;
+$color-blue:#7579ff;
+$color-pink:#b224ef;
+
+.addUserForm{
+    padding: 70px;
+    padding-top: 0px;
+    .inputContent{
+        display: block;
+        margin-bottom: 0;
+    }
+   .selctBox{
+        box-shadow:$box-shadow-grey;
+        border: none;
+        border-radius: 20px;
+   }
+    button{
+       margin-left: 3px;
+    }
+    .AddCancelBtns{
+        margin-top: 20px;
+        .notify{
+          width: 50%;
+        }
+        .addBtn{
+            background:$bg-1;
+            border-radius: 10px;
+            color:$color-white;
+            font-weight: 600;
+            span{
+                margin-bottom: 1px;
+            }&:hover{
+                background: $bg-2;
+                color:$color-white;
+            }
+        }
+        .cancelBtn{
+            box-shadow:$box-shadow-grey;
+            border-radius: 10px;
+            padding: 0px 35px;
+            a{
+                color:$color-pink !important;
+                @extend label;
+            }&:hover{
+                color:$color-blue;
+            }
+        }
+    }
+    .UpdateButtons{
+        float: right;
+        @extend .AddCancelBtns;
+    }
+   label{
+    height: 10px !important;
+    margin-top: 15px;
+    font-weight: 600;
+    font-family: inherit;
+   }
+     
+}
+

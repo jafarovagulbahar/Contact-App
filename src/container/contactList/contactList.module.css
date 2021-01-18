@@ -1,0 +1,26 @@
+.contactList .btnAction {
+  margin-left: 5px;
+}
+
+.contactList .btnAction span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactList .banner {
+  position: relative;
+  margin-right: 5px;
+  padding-left: 5px;
+  word-break: break-all;
+}
+
+.contactList .banner::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #d5caca;
+  right: 0px;
+}
+/*# sourceMappingURL=contactList.module.css.map */

@@ -13,17 +13,17 @@ body {
   background: -webkit-linear-gradient(left, #7579ff, #b224ef);
 }
 
-.content {
+body .content {
   max-width: 50em;
   margin: 4em auto;
   padding: 40px;
   padding-top: 40px;
   -webkit-box-shadow: 0 0 40px #000;
           box-shadow: 0 0 40px #000;
-  background-color: #ffffff;
+  background-color: white;
 }
 
-.ant-list-item-meta-title {
+body .ant-list-item-meta-title {
   word-break: break-all;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=app.module.css.map */
